@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="customlisteners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Sanity Login Test(failed)">
+    <classes>
+      <class name="sampletestng.Assertions_soft">
+        <methods>
+          <include name="validateTitleTest"/>
+        </methods>
+      </class> <!-- sampletestng.Assertions_soft -->
+      <class name="sampletestng.NewTest">
+        <methods>
+          <include name="Test1"/>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- sampletestng.NewTest -->
+    </classes>
+  </test> <!-- Sanity Login Test(failed) -->
+  <test thread-count="5" name="Failure Test(failed)">
+    <classes>
+      <class name="dependency.TestFailure">
+        <methods>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- dependency.TestFailure -->
+    </classes>
+  </test> <!-- Failure Test(failed) -->
+</suite> <!-- Failed suite [Sanity Suite] -->

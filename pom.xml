@@ -23,5 +23,10 @@
 			<artifactId>rest-assured-common</artifactId>
 			<version>5.5.0</version>
 		</dependency> -->
+		<dependency>
+			<groupId>seleniumsample</groupId>
+			<artifactId>herokuapp</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
